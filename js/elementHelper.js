@@ -1,28 +1,3 @@
-
-
-
-var timer;
-function resetTimer() {
-        clearTimeout(timer);
-		timer = setTimeout(logOut, 3000)
-		$("#loggedinmessage").css('display','inline-block')
-        // 1000 milisec = 1 sec
-	}
-	
-function logOut() {
-	   $("#loggedinmessage").css('display','none')
-	   document.cookie="loggedin=false";
-	   document.removeEventListener("click", resetTimer)
-	}
-	
-function logIn(){
-	$("#loggedinmessage").css('display','inline-block')
-	timer = setTimeout(logOut,10000);
-	document.cookie="firstname=John";
-	alert(document.cookie)
-	document.addEventListener("click", resetTimer);
-	}
-
 function showAndEnableButton(){
 	$("#hidden-disabled-button").css("display","inline");
 	setTimeout(function(){
