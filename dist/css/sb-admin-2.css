@@ -17,7 +17,9 @@ body {
 #loggedinmessage{
   display: none;
 }
-
+#countdownclock{
+  display: none;
+}
 #rotatingimage{
   top: calc(50% - 15px);
   margin: 0 auto;

@@ -2,7 +2,9 @@ $(document).ready(function () {
     isUserLoggedIn();
 });
 
-var timer;	
+var timer;
+var countDownMilliSeconds = 10000;
+var countDownClock;	
 function isUserLoggedIn(){
 	var cookie = getCookie("loggedin");
 	if (cookie!=null){
@@ -44,12 +46,13 @@ function saveCookie(seconds){
 }
 
 function startTimer(){
-	timer = setTimeout(logOut,3000);
+	timer = setTimeout(logOut,countDownMilliSeconds);
+	
 }
 
 function clearAndStartTimer(){
 	clearTimeout(timer);
-	timer = setTimeout(logOut,3000);
+	startTimer();
 }
 		
 	function setClickEventListener(){
@@ -89,3 +92,6 @@ function setTime(seconds){
 	var expiresString = "; expires="+date.toGMTString();
 	return expiresString;
 }
+
+
+
