@@ -41,12 +41,84 @@ body {
 
 #striped-div{
   height:220px;
-  width:220px;
-  border-color:gray;
+  width:120px;
   position: relative;
   background-size: contain;
   cursor:pointer;
+  border-style:dashed;
+  border-color:darkgray;
 }
+#striped-div2{
+  height:20px;
+  width:200px;
+  position: relative;
+  background-size: contain;
+  cursor:pointer;
+  border-style:dotted;
+  border-color:darkgray;
+}
+#striped-div3{
+  height:320px;
+  width:320px;
+  position: relative;
+  background-size: contain;
+  cursor:pointer;
+  border-style:solid;
+  border-color:darkgray;
+}
+
+#striped-div-bottomrightcorner{
+  height:120px;
+  width:120px;
+  border-color:gray;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-size: contain;
+  cursor:pointer;
+  border-style:double;
+  border-color:black;
+}
+
+#striped-div-topleftcorner{
+  height:120px;
+  width:120px;
+  border-color:gray;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-size: contain;
+  cursor:pointer;
+  border-style:double;
+  border-color:black;
+}
+#striped-div-bottomleftcorner{
+  height:120px;
+  width:120px;
+  border-color:gray;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-size: contain;
+  cursor:pointer;
+  border-style:double;
+  border-color:black;
+}
+
+#striped-div-toprightcorner{
+  height:120px;
+  width:120px;
+  border-color:gray;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-size: contain;
+  cursor:pointer;
+  border-style:double;
+  border-color:black;
+}
+
+
 
 #striped-div-screenshot{
   border-style: dashed;
@@ -133,6 +205,7 @@ display:none;
   padding: 0 15px;
   min-height: 568px;
   background-color: white;
+  position:relative;
 }
 
 @media (min-width: 768px) {
