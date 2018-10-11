@@ -241,10 +241,10 @@ body {
 
 @media (max-width: 768px) {
   .navbar-brand {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .navbar-top-links {
-    font-size: 1em;
+    font-size: 0.65em;
   }
   .page-header {
     font-size: 2em;
