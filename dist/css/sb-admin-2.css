@@ -5,7 +5,7 @@
  */
 
 body {
-  background-color: #f8f8f8;
+  background-color: #ffffff;
 }
 
 #wrapper {
@@ -44,15 +44,50 @@ body {
   position: relative;
 }
 
-#striped-div {
-  height: 220px;
-  width: 120px;
-  position: relative;
-  background-size: contain;
-  cursor: pointer;
-
-  border-color: darkgray;
+#colors{
+  position:relative;
 }
+
+.colorcolumn{
+  margin:5px;
+}
+
+#resetcolors{
+  cursor:pointer;
+}
+
+.colorexample{
+  height:30px;
+  background-color:rgb(0,0,0);
+  cursor:pointer;
+}
+
+#rect {
+  width:100%;
+  height:auto;
+  position: relative;
+  cursor: pointer;
+}
+
+#imagefilled0-3{
+text-align:center;
+cursor:pointer;
+
+} 
+#imagefilled1-3{
+text-align:center;
+cursor:pointer;
+} 
+
+#imagefilled2-3{
+text-align:center;
+cursor:pointer;
+} 
+    
+#imagefilled3-3{
+text-align:center;
+cursor:pointer;
+} 
 
 #striped-div2 {
   height: 20px;
@@ -78,9 +113,6 @@ body {
   height: 120px;
   width: 120px;
   border-color: gray;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
   background-size: contain;
   cursor: pointer;
 
@@ -104,9 +136,7 @@ body {
   height: 120px;
   width: 120px;
   border-color: gray;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
+
   background-size: contain;
   cursor: pointer;
 

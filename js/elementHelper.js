@@ -59,6 +59,10 @@ function startRotation(){
 	$("#rotatingimage").addClass('imageanimation');
 }
 
+function resetColors(){
+	$(".colorexample").css('background-color','rgb(0,0,0)');
+}
+
 function insertText(id, textToInsert){
 insertText(id,textToInsert);
 }
@@ -97,14 +101,16 @@ function appendButton(){
    $("#elementsvisibility-second").append( "<button id='createdelement' type='button' class='btn btn-warning col-xs-6'>#createdelement</button><br>" );
 }
 
-function setRedBackground(){
-	$("#headernav").css('background-color','red');
-	$("#page-wrapper").css('background-color','red');
+function setBlackBackground(){
+	$("#headernav").css('background-color','black');
+	$("#page-wrapper").css('background-color','black');
+	$("body").css('background-color','black');
 }
 
 function setWhiteBackground(){
 	$("#headernav").css('background-color','white');
 	$("#page-wrapper").css('background-color','white');
+	$("body").css('background-color','white');
 }
 
 function appendandhideButton(){
